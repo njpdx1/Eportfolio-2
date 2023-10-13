@@ -1,40 +1,51 @@
+/* Importing a font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-/*Reset default CSS*/
+/* Reset default CSS styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  /* Use the Roboto font for all text */
 }
 
+/* Enable smooth scrolling behavior for the HTML element */
 html {
   scroll-behavior: smooth;
 }
 
+/* Remove default list styles for <li> elements */
 li {
   list-style-type: none;
 }
 
+/* Define default styling for paragraphs */
 p {
   line-height: 1.5;
   font-size: 16px;
 }
 
+/* Remove text decoration from anchor links */
 a {
   text-decoration: none;
 }
 
+/* Add pointer cursor to buttons */
 button {
   cursor: pointer;
 }
 
+/* Define default styles for sections */
 section {
   background-color: rgb(245, 245, 245);
   transition: all 300ms ease;
+  /* Apply smooth transitions to section background changes */
 }
 
-input, textarea {
+/* Define styles for input and textarea elements */
+input,
+textarea {
   width: 100%;
   background-color: #242424;
   color: #fff;
@@ -45,32 +56,42 @@ input, textarea {
   border-right: none;
   height: 40px;
   transition: all 300ms ease;
+  /* Apply smooth transitions to input/textarea changes */
 }
 
+/* Define styles for textarea elements */
 textarea {
   resize: vertical;
+  /* Allow vertical resizing of textarea */
   height: 100px;
   margin-top: 8px;
 }
 
+/* Style labels for form inputs */
 label {
   font-size: 14px;
   font-weight: bold;
 }
 
-input:hover, textarea:hover {
+/* Apply hover effect to input and textarea elements */
+input:hover,
+textarea:hover {
   border-color: #dcdfe6;
 }
 
-input:focus, textarea:focus {
+/* Apply focus effect to input and textarea elements */
+input:focus,
+textarea:focus {
   border-color: #0c728b;
 }
 
+/* Define styling for a container element */
 .container {
   padding: 50px 0;
   width: 100%;
 }
 
+/* Define styling for a row element */
 .row {
   width: 100%;
   max-width: 1100px;
@@ -78,6 +99,7 @@ input:focus, textarea:focus {
   padding: 0 12px;
 }
 
+/* Apply hover and active effects to elements with the "click" class */
 .click {
   cursor: pointer;
   transition: all 300ms ease;
@@ -91,6 +113,7 @@ input:focus, textarea:focus {
   transform: scale(0.8);
 }
 
+/* Define styling for titles with the "title" class */
 .title {
   font-size: 120px;
   margin-bottom: 12px;
@@ -98,14 +121,17 @@ input:focus, textarea:focus {
   line-height: 1;
 }
 
+/* Define a specific style for text with the "blue" class */
 .blue {
   color: #0c728b !important;
 }
 
+/* Create a hover effect for links with the "link__hover-effect" class */
 .link__hover-effect {
   position: relative;
 }
 
+/* Define styles for the hover effect line after links */
 .link__hover-effect:after {
   content: "";
   position: absolute;
@@ -116,70 +142,88 @@ input:focus, textarea:focus {
   transition: all 300ms ease;
 }
 
+/* Define styles for the hover effect line when it's white */
 .link__hover-effect--white:after {
   background-color: #fff;
 }
 
+/* Define styles for the hover effect line when it's black */
 .link__hover-effect--black:after {
   background-color: #242424;
 }
 
+/* Expand the hover effect line when hovering over links */
 .link__hover-effect:hover:after {
   left: 0;
   width: 100%;
 }
 
+/* Define styles for navigation elements, scroll icon, and header */
 nav,
 .scroll,
 .header {
   opacity: 1;
   visibility: visible;
   transition: all 600ms 800ms;
+  /* Apply transitions with delays */
 }
 
+/* Hide navigation elements, scroll icon, and header when the form is open */
 .form--open nav,
 .form--open .scroll,
 .form--open .header {
   opacity: 0;
   visibility: hidden;
   transition: all 400ms;
+  /* Apply transitions */
 }
 
+/* Define dark theme styles for specific elements */
 .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para
-{
+.dark-theme .header__para {
   color: white;
+  /* Change text color to white in dark theme */
 }
+
+/* Define dark theme background color for sections */
 .dark-theme section {
   background-color: #242424;
 }
+
+/* Remove filter effect on personal logo in dark theme */
 .dark-theme #personal-logo {
   filter: none;
 }
+
+/* Change border color of scroll icon in dark theme */
 .dark-theme .scroll__icon {
   border-color: white;
 }
+
+/* Change background color of hover effect line in dark theme */
 .dark-theme .scroll__icon:after,
 .dark-theme .link__hover-effect--black:after {
   background-color: white;
 }
+
+/* Define styles for the mail button */
 .dark-theme .mail__btn {
   background-color: white;
   color: #242424;
 }
-/* 
 
-  LANDING PAGE 
-  
-*/
+/* Landing Page styles */
+/* Define styles for the landing page */
 #landing-page {
   min-height: 100vh;
+  /* Ensure the landing page covers the entire viewport height */
 }
 
+/* Define styles for the header */
 .header {
   position: absolute;
   top: 50%;
@@ -190,17 +234,20 @@ nav,
   padding: 0 30px;
 }
 
+/* Define styles for the header paragraph */
 .header__para {
   font-size: 24px;
   line-height: 2;
   max-width: 450px;
 }
 
+/* Define styles for the social media links */
 .social__list {
   margin-top: 16px;
   display: flex;
 }
 
+/* Define styles for individual social media links */
 .social__link {
   background-color: #0c728b;
   color: white;
@@ -215,6 +262,7 @@ nav,
   border-radius: 50%;
 }
 
+/* Define styles for the mail button */
 .mail__btn {
   width: 70px;
   height: 70px;
@@ -230,6 +278,7 @@ nav,
   box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
 }
 
+/* Define styles for the scroll icon */
 .scroll {
   position: absolute;
   bottom: 20px;
@@ -237,6 +286,7 @@ nav,
   transform: translateX(-50%);
 }
 
+/* Define styles for the scroll icon container */
 .scroll__icon {
   width: 20px;
   height: 30px;
@@ -247,6 +297,7 @@ nav,
   justify-content: center;
 }
 
+/* Define styles for the animation of the scroll icon */
 .scroll__icon:after {
   content: "";
   width: 4px;
@@ -256,22 +307,19 @@ nav,
   animation: scroll 1000ms infinite alternate-reverse;
 }
 
+/* Keyframes animation for the scroll icon */
 @keyframes scroll {
   0% {
     transform: translateY(3px);
   }
-  
+
   100% {
     transform: translateY(-3px);
   }
 }
 
-/* 
-
-  NAVIGATION 
-  
-*/
-
+/* Navigation styles */
+/* Define styles for the navigation bar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -283,35 +331,37 @@ nav {
   height: 100px;
 }
 
+/* Define styles for the personal logo */
 #personal-logo {
   width: 50px;
   height: 50px;
   filter: invert(1);
 }
 
+/* Define styles for navigation links list */
 .nav__link--list {
   display: flex;
 }
 
+/* Define styles for navigation links */
 .nav__link {
   margin: 0 12px;
 }
 
+/* Define styles for anchor links in navigation */
 .nav__link--anchor {
   font-size: 16px;
   color: #242424;
   font-weight: 700;
 }
 
+/* Define styles for the contrast adjustment icon */
 .fa-adjust {
   font-size: 20px;
 }
 
-/* 
-
-  form 
-  
-*/
+/* Form styles */
+/* Define styles for the form container */
 .form {
   position: absolute;
   top: 50%;
@@ -327,11 +377,15 @@ nav {
   z-index: -1;
   transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
-.form--open .form{
+
+/* Show the form and adjust its styles when it's open */
+.form--open .form {
   z-index: 60;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
   visibility: visible;
 }
+
+/* Define styles for the form halves (about and contact) */
 .form__half {
   width: 50%;
   padding: 40px 72px;
@@ -342,23 +396,26 @@ nav {
   transition: all 300ms ease-in;
 }
 
+/* Slide in the about and contact halves when the form is open */
 .form--open .form__about,
-.form--open .form__contact
-{
+.form--open .form__contact {
   transform: translateX(0%);
 }
 
+/* Define styles for the about half */
 .form__about {
   background-color: rgb(245, 245, 245);
   transform: translateX(-110%);
 }
 
+/* Define styles for the languages section in the form */
 .form__languages {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+/* Define styles for individual language items in the form */
 .form__language {
   width: calc(33.33% - 16px);
   margin-bottom: 16px;
@@ -370,15 +427,18 @@ nav {
   transition: all 300ms ease;
 }
 
+/* Scale and change opacity of language name when hovering */
 .form__language:hover .language__name {
   transform: scale(1);
 }
 
+/* Apply brightness and scale effect to language items on hover */
 .form__language:hover {
   filter: brightness(80%);
   transform: scale(0.9);
 }
 
+/* Define styles for the language name */
 .language__name {
   position: absolute;
   bottom: -10px;
@@ -386,16 +446,19 @@ nav {
   transition: all 300ms ease;
 }
 
+/* Define styles for language images */
 .form__language--img {
   width: 100%;
 }
 
+/* Define styles for the contact half of the form */
 .form__contact {
   transform: translateX(110%);
   background-color: #242424;
   color: white;
 }
 
+/* Define styles for form titles and subtitles */
 .form__title {
   font-size: 26px;
 }
@@ -405,15 +468,18 @@ nav {
   font-size: 14px;
 }
 
+/* Define styles for form paragraphs */
 .form__para {
   margin-bottom: 12px;
   line-height: 1.75;
 }
 
+/* Define styles for form items */
 .form__item {
   margin-bottom: 20px;
 }
 
+/* Define styles for the form submit button */
 .form__submit {
   background-color: #0c728b;
   border: 2px solid #0c728b;
@@ -426,16 +492,19 @@ nav {
   transition: all 300ms ease;
 }
 
+/* Apply styles to the form submit button on hover */
 .form__submit:hover {
   border-color: #fff;
   background-color: transparent;
 }
 
+/* Apply styles to the form submit button when active */
 .form__submit:active {
   border-color: #0c728b;
   color: #0c728b;
 }
 
+/* Define styles for form overlays */
 .form__overlay {
   position: absolute;
   top: 0;
@@ -448,11 +517,13 @@ nav {
   z-index: -1;
 }
 
+/* Define styles for the loading overlay */
 .form__overlay--loading {
   background-color: #242424;
   font-size: 80px;
 }
 
+/* Define styles for the success overlay */
 .form__overlay--success {
   background-color: #4bb543;
   font-size: 40px;
@@ -461,15 +532,18 @@ nav {
   padding: 28px;
 }
 
+/* Show form overlays when they are visible */
 .form__overlay--visible {
   z-index: 1;
   display: flex;
 }
 
+/* Define styles for the exit button in the form */
 .fa-spinner {
   animation: spinner 750ms infinite linear;
 }
 
+/* Keyframes animation for the spinner */
 @keyframes spinner {
   0% {
     transform: rotate(0);
@@ -480,6 +554,7 @@ nav {
   }
 }
 
+/* Styles for the exit button in the form */
 .form__exit {
   position: absolute;
   top: 30px;
@@ -488,27 +563,27 @@ nav {
   font-size: 36px;
   z-index: 100;
 }
-/* 
 
-  PROJECTS 
-  
-*/
-
+/* Project Section styles */
+/* Define styles for section titles */
 .section__title {
   text-align: center;
   font-size: 48px;
   margin-bottom: 60px;
 }
 
+/* Define styles for individual projects */
 .project {
   margin-bottom: 135px;
 }
 
+/* Define styles for project images */
 .project__img {
   width: 100%;
   transition: all 600ms ease;
 }
 
+/* Define styles for project wrappers */
 .project__wrapper {
   position: relative;
   border-radius: 20px;
@@ -516,16 +591,19 @@ nav {
   overflow: hidden;
 }
 
+/* Show project descriptions when hovering over project wrappers */
 .project__wrapper:hover .project__description {
   opacity: 1;
   transform: translateY(-50%);
 }
 
+/* Apply scaling and blurring effect to project images on hover */
 .project__wrapper:hover .project__img {
   transform: scale(1.07);
   filter: blur(5px);
 }
 
+/* Define styles for project descriptions */
 .project__description {
   position: absolute;
   top: 50%;
@@ -537,11 +615,13 @@ nav {
   max-width: 550px;
 }
 
+/* Show project wrapper background on hover */
 .project__wrapper:hover .project__wrapper--bg {
-  opacity: 0.7; 
+  opacity: 0.7;
   visibility: visible;
 }
 
+/* Define styles for project wrapper backgrounds */
 .project__wrapper--bg {
   position: absolute;
   top: 0;
@@ -549,35 +629,35 @@ nav {
   width: 100%;
   height: 100%;
   background-color: #1c1d25;
-  opacity: 0; 
+  opacity: 0;
   transition: all 450ms ease;
   visibility: hidden;
 }
 
+/* Define styles for project description titles */
 .project__description--title {
   font-size: 40px;
 }
 
+/* Define styles for project description subtitles */
 .project__description--sub-title {
   margin-top: 8px;
 }
 
+/* Define styles for project description links */
 .project__description--link {
   color: white;
   font-size: 20px;
   margin-right: 16px;
 }
 
+/* Define styles for project description paragraphs */
 .project__description--para {
   margin: 16px 0;
 }
 
-/* 
-
-  FOOTER 
-  
-*/
-
+/* Footer styles */
+/* Define styles for the footer */
 footer {
   position: relative;
   background-color: #242424;
@@ -585,16 +665,19 @@ footer {
   padding: 6% 0;
 }
 
+/* Define styles for footer rows */
 .footer__row {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Define styles for the footer logo image */
 .footer__logo--img {
   width: 70px;
 }
 
+/* Define styles for footer social media links list */
 .footer__social--list {
   width: 100%;
   max-width: 500px;
@@ -603,74 +686,65 @@ footer {
   margin: 28px 0;
 }
 
+/* Define styles for footer social media links and copyright text */
 .footer__social--link,
 .footer__copyright {
   color: white;
 }
 
-/* 
-
-  SHAPES
-
-  shapes on the first row 
-  height = 15vh
-  
-  shapes on the second row 
-  height = 50vh
-  
-  shapes on the third row 
-  height = 80vh
-
-  shapes on the first column
-  width = 5vw
-  
-  shapes on the second column
-  width = 50vw
-
-  shapes on the third column
-  width = 80vw
-
-*/
+/* Shape styles */
+/* Define styles for shape elements */
 .shape {
   position: fixed;
 }
+
+/* Define positions for shape elements */
 .shape--0 {
   top: 15vh;
   left: 5vw;
 }
+
 .shape--1 {
   top: 15vh;
   left: 50vw;
 }
+
 .shape--2 {
   top: 15vh;
   left: 80vw;
 }
+
 .shape--3 {
   top: 50vh;
   left: 5vw;
 }
+
 .shape--4 {
   top: 50vh;
   left: 50vw;
 }
+
 .shape--5 {
   top: 50vh;
   left: 80vw;
 }
+
 .shape--6 {
   top: 80vh;
   left: 5vw;
 }
+
 .shape--7 {
   top: 80vh;
   left: 50vw;
 }
+
 .shape--8 {
   top: 80vh;
   left: 80vw;
 }
 
+/* Define styles for the pop-up footer logo */
 .footer__logo--popper {
   position: absolute;
   right: 0;
@@ -681,23 +755,27 @@ footer {
   color: white;
 }
 
-.footer__anchor {
-  position: relative;
-}
-
+/* Apply a pop-up effect to the footer logo on hover */
 .footer__anchor:hover .footer__logo--popper {
   transform: translateX(60px);
   opacity: 1;
 }
 
-/* Small phones, tablets, large smart phones */
+/* Media Queries for Responsive Design */
+/* Define styles for small screens and tablets */
 @media (max-width: 768px) {
+
+  /* Adjust title font size */
   .title {
     font-size: 80px;
   }
+
+  /* Adjust header paragraph font size */
   .header__para {
     font-size: 20px;
   }
+
+  /* Modify form styles for smaller screens */
   .form {
     top: 0;
     left: 0;
@@ -707,34 +785,82 @@ footer {
     flex-direction: column-reverse;
     border-radius: 0;
   }
+
+  /* Adjust form half width for smaller screens */
   .form__half {
     width: 100%;
   }
 }
 
+/* Define styles for small screens (phones) */
+@media (max-width: 480px) {
+
+  /* Adjust title font size */
+  .title {
+    font-size: 60px;
+  }
+
+  /* Adjust header paragraph font size */
+  .header__para {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  /* Modify form styles for smaller screens */
+  .form {
+    padding: 0;
+  }
+
+  /* Adjust form padding for smaller screens */
+  .form__half {
+    padding: 20px;
+  }
+}
+
 /* Small phones */
 @media (max-width: 480px) {
+
+  /* Reduce the font size of title elements
   .title {
     font-size: 52px;
   }
+
+  /* Reduce the font size of header parapgraphs
   .header__para {
     font-size: 18px;
   }
+
+  /* Hide the first child of elements with the class "nav__link." */
   .nav__link:first-child {
     display: none;
   }
+
+  /* Hide elements with the class "project__description--para." */
   .project__description--para {
     display: none;
   }
+
+  /* Adjust the styling of elements with the class "project__description." */
   .project__description {
+    /* Left-align the text within the element. */
     left: 0;
+
+    /* Remove padding within the element. */
     padding: 0;
+
+    /* Make the element full-width, spanning 100% of the screen width. */
     width: 100%;
+
+    /* Center-align text within the element. */
     text-align: center;
   }
+
+  /* Add a margin-bottom of 8 pixels to elements with the class "project__description--sub-title." */
   .project__description--sub-title {
     margin-bottom: 8px;
   }
+
+  /* Increase the padding of elements with the class "form__half" to 40 pixels. */
   .form__half {
     padding: 40px;
   }

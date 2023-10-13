@@ -21,4 +21,3 @@ For any inquiries or feedback, please contact me at najiib@pdx.edu
 - Font Awesome for providing a library of icons.
 - Email.js for simplifying email form handling.
 
-Feel free to use this code as a starting point for creating your personal website or portfolio.

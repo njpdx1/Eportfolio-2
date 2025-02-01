@@ -765,6 +765,10 @@ footer {
 /* Define styles for small screens and tablets */
 @media (max-width: 768px) {
 
+  .shape {
+    display: none !important;
+  }
+  
   /* Adjust title font size */
   .title {
     font-size: 80px;
